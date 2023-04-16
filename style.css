@@ -1,0 +1,147 @@
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+main {
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 100%;
+    cursor: pointer;
+}
+.logo>img {
+    width: 10rem;
+    margin: 0 2rem;
+}
+
+section>img {
+    max-width: 70vw;
+    margin: 1.5rem 2rem;
+}
+section {
+    text-align: center;
+}
+section div {
+    margin: 2rem;
+}
+h1 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+p {
+    margin: 2rem 0;
+    font-weight: 300;
+
+}
+button {
+    width: 16rem;
+    padding: 1rem;
+    border-radius: 40px;
+    box-shadow: 2px 8px 19px hsl(257, 71%, 40%);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: hsl(257, 40%, 49%);
+}
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+.icon {
+    text-align: center;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    width: 1rem;
+    cursor: pointer;
+}
+.icon:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #000;
+}
+
+
+@media (min-width: 1024px)  {
+    main {
+        background-image: url(./images/bg-desktop.svg);
+        max-height: 100vh;
+    }
+    section {
+        display: flex;
+    }
+    header {
+        justify-content: end;
+        align-items: end;
+        gap: 0;
+    }
+    section>img {
+        max-width: 100%;
+        margin: 2.5rem 2rem 0;
+    }
+    .logo {
+        width: 100%;
+        
+    }
+    .logo>img {
+        width: 10rem;
+        margin: 1.3rem 0 0;
+        padding-left: 3rem;
+    }
+    .content {
+        margin: 3rem 3rem 5rem 5rem;
+        text-align: start;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    button {
+        width: 12rem;
+    }
+    .icons {
+        padding-right: 3rem;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+    section>img {
+        max-width: 40%;
+    }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(300, 69%, 71%);
+}
